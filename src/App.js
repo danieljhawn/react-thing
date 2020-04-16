@@ -24,7 +24,7 @@ class App extends Component {
   // toggle complete
   markComplete = (id) => {
     this.setState({
-      todos: this.state.todos.map(todo => {
+      todos: this.state.todos.reverse().map(todo => {
         if (todo.id === id) {
           todo.completed = !todo.completed
         }
